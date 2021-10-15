@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mat Slabek Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav>
+        <ul id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <div id="background">
+    <div class="bottom-content">
+    <h1>Mat Slabek, coding enthusiast</h1>
+     </div>
+    </div>
+</header>
+<main>
+    <div class="window" id="modal-window-vp">
+        <div class="window-header">
+            <div class="title">
+                Virtual Piano
+            </div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="window-body">
+            <p>Virtual Piano project that you can check out
+                <a href="https://github.com/matslabek/Virtual_Piano" target="_blank" title="See the project repo on Github">here</a>.</p>
+            <p>I created it using HTML, CSS and some JS</p>
+        </div>
+    </div>
+    <div class="window" id="modal-window-to-do">
+        <div class="window-header">
+            <div class="title">
+                To-do List
+            </div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="window-body">
+            <p>Simple To-do List project that you can check out
+                <a href="https://github.com/matslabek/To-Do-List" target="_blank" title="See the project repo on Github">here</a>.</p>
+            <p>I created it using HTML, CSS and some JS</p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <h2>About me</h2>
+    <section id="about">
+    <img id="avatar" src="img/moonlight.jpg" height="300px" alt="moonlight picture">
+    <p>This is by no means an honest introduction about me, just some placeholder
+    and one of my favourite paintings by Munch</p>
+    </section>
+    <h2>Portfolio</h2>
+        <section id="portfolio">
+        <p>Some of my projects include:</p>
+        <div id="portfolio-flex">
+            <div>
+                <img class="portfolio-img" src="img/virtual_piano.png" height="300px" width="350px" alt="Virtual Piano">
+                <p><button data-window-target="#modal-window-vp" class="open-window">Virtual Piano</button></p>
+            </div>
+            <div>
+                    <img class="portfolio-img" src="img/to-do_list.png" height="300px" width="450px" alt="To-do List">
+                <p><button data-window-target="#modal-window-to-do" class="open-window">To-do list</button></p>
+            </div>
+        </div>
+    </section>
+    <h2>Contacts</h2>
+    <section id="contacts">
+        <p>Let's get in touch! Send me an 📧 at <a href="mailto:matslabek@gmail.com">matslabek@gmail.com</a></p>
+    </section>
+</main>
+<footer>Made with ❤️ by Mat Slabek 2021</footer>
+<script rel="script" src="script.js"></script>
+</body>
+</html>
