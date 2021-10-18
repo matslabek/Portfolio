@@ -152,7 +152,10 @@ main {
     font-size: 1.25rem;
     background: none;
 }
-
+.hamburger {
+    visibility: hidden;
+    position: absolute;
+}
 @media all and (max-width: 800px) {
     #nav-menu {
         justify-content: space-around;
@@ -174,6 +177,10 @@ main {
         border-bottom: none;
     }
     #avatar {
+        height: 150px;
+    }
+    .portfolio-img {
+        width: 200px;
         height: 150px;
     }
 }
